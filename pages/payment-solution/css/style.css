@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("../fonts/Delm/stylesheet.css");
+
+:root{
+    --main-font: "Encode Sans Semi Expanded";
+    --header-font: "Delm";
+    
+    --main-color-a: #A62CDE;
+    --main-color-b: #D14D3D;
+    --main-text-color: #B9B4BA;
+    --highlight-text-color: white;
+    --background-color: #270E33;
+
+    --logo-font-size: 32px;
+    --header-font-size: 52px;
+    --main-font-size: 12px;
+    --button-font-size: 14px;
+    --stats-font-size: 30px;
+
+    --main-line-height: 24px;
+    --header-line-height:70px;
+}
+
+body{
+    font-family: var(--main-font);
+    font-size: var(--main-font-size);
+    line-height: var(--main-line-height);
+    color: var(--main-text-color);
+    z-index: 1;
+    background-size: 100% 100%;
+    background-position: 0px 0px,0px 0px,0px 0px;
+    background-color: var(--background-color);
+    /*
+    Не оч похоже не буду тратить время
+    background-image:  radial-gradient(60% 75% at 70% 20%, #D14D3D 0%, #D14D3D00 100%),radial-gradient(79% 75% at 99% 35%, #602189 0%, #B482D61A 99%),radial-gradient(79% 75% at 10% 99%, #C08BE1FF 0%, #D9C2E71A 99%);
+    */
+}
+
+
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.page-header {
+}
+.logo {
+    font-size: var(--logo-font-size);
+    color: var(--highlight-text-color);
+    letter-spacing: -4px;
+}
+
+.logo strong{
+    background: -webkit-linear-gradient(360deg, var(--main-color-a), var(--main-color-b));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-right: 5px; /* Без этого обрезает букву последнюю */
+}
+
+.main-nav {
+    color: var(--highlight-text-color);
+}
+.menu {
+    list-style: none;
+}
+.menu-item a{
+    position: relative;
+    padding-right: 13px;
+}
+
+.menu-item a::after {
+    content: "";
+    width: 6px;
+    height: 4px;
+   
+    background: url("../img/triangle.svg") no-repeat;
+    background-size: 6px 4px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+.account-menu {
+    list-style: none;
+}
+
+.button {
+    font-size: var(--button-font-size);
+    color: var(--highlight-text-color);
+}
+.button-highlight {
+    position: relative;
+    display: block;
+    width: 124px;
+    height: 42px;
+}
+
+.button-highlight::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #B9B4BA;
+    border-radius: 21px;
+    opacity: 0.1;
+    filter: blur(1px);
+    box-shadow: 1px 1px 2px 1px rgba(255, 255, 255, 20);
+
+}
+
+
+.header {
+    font-family: var(--header-font);
+    font-size: var(--header-font-size);
+    line-height: var(--header-line-height);
+    color: var(--highlight-text-color);
+}
+.color-button {
+    background: -webkit-linear-gradient(360deg, var(--main-color-a), var(--main-color-b));
+}
+
+.button-play {
+    position: relative;
+    padding-left: 42px;
+}
+
+.button-play::before{
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 27px;
+    background: url("../img/play.svg") no-repeat;
+    background-size: 27px 27px;
+    top: -8px;
+    left: 0;
+}
+
+.stats {
+    list-style: none;
+}
+
+.stat-value {
+    font-size: var(--stats-font-size);
+    color: var(--highlight-text-color);
+    font-weight: 600;
+}
+.stat-unit {
+    color: var(--main-color-a);
+}
+
+.clients-list {
+    list-style: none;
+}
+
+.client-item:nth-child(1) .client-logo{
+    width: 158px;
+}
+
+.client-item:nth-child(2) .client-logo{
+    width: 130px;
+}
+
+.client-item:nth-child(3) .client-logo{
+    width: 130px;
+}
+
+.client-item:nth-child(4) .client-logo{
+    width: 155px;
+}
+
+

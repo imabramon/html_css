@@ -1,0 +1,4 @@
+#ignore some mac staff
+*.DS_Store
+#ignore zip
+*.zio

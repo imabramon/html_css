@@ -28,16 +28,31 @@ a{
 }
 
 .menu-nav{
-    margin: 0;
+    margin-top: auto;
     margin-left: auto;
     margin-right: 40px;
+    margin-bottom: auto;
 }
 
 .menu{
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     list-style: none;
     width: 560px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal-account{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 36px;
+    height: 36px;
+    border: #00C6BD 1px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .logo{
@@ -50,8 +65,10 @@ a{
 }
 
 .personal-account-img{
-    width: 36px;
-    height: 36px;
+    display: block;
+    width: 16px;
+    height: 18px;
+    margin: auto; /* TODO звучит как колхоз*/
 }
 
 .menu-item, .date-range{
@@ -69,12 +86,21 @@ a{
     text-transform: uppercase;
 }
 
+.lead-section{
+    margin: 0;
+    margin-bottom: 120px;
+}
+
+/* TODO заменить на класс */
 .lead-section > h1{
     font-weight: 400;
     font-style: italic;
     line-height: 60px;
     font-size: 44px;
     text-transform: uppercase;
+    margin: 0;
+    margin-left: 70px;
+    margin-bottom: 50px;
 }
 
 .service-title, .contacts > h2{
@@ -83,13 +109,26 @@ a{
     font-size: 24px;
 }
 
+.services{
+    margin-bottom: 120px;
+}
+
 .service{
+    width: 1030px;
     font-size: 16px;
     line-height: 24px;
     display: grid;
     column-gap: 30px;
-    row-gap: 0;
+    row-gap: 0px;
     padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    grid-template-rows: 28px 69px 1fr;
+}
+
+.service:last-child{
+    margin-bottom: 0;
 }
 
 .service-right{
@@ -106,18 +145,18 @@ a{
         "photo data-range "
         "photo title"
         "photo description";
+    text-align: right;
 }
 
 .date-range{
     grid-area: data-range;
     margin: 0;
-    margin-bottom: 10px;
 }
 
 .service-title{
     grid-area: title;
     margin: 0;
-    margin-bottom: 35px;
+
 }
 
 .service-photo{
@@ -202,12 +241,95 @@ a{
     color: #8693A4;
 }
 
+.news {
+    width: 770px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+
+.news-item > *{
+    margin: 0;
+}
+
+.news :last-child{
+    margin-bottom: 0;
+}
+
+.news-header{
+    margin-bottom: 55px;
+}
+
+.news-picture{
+    margin-bottom: 33px;
+}
+
 .news h3, .news h4{
     font-size: 22px;
     font-weight: 700;
     line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
+}
+
+.news_title{
+    margin-bottom: 27px;
+}
+
+.news-paragraph{
+    margin-bottom: 12px;
+}
+
+.news-sub-header{
+    margin-top: 24px;
+    margin-bottom: 15px;
+}
+
+.news-list{
+    margin-bottom: 30px;
+}
+
+.news-q{
+    display: block;
+    margin-bottom: 30px;
+}
+
+.news-footer{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 60px 1fr 26px;
+    column-gap: 10px;
+    grid-template-areas: 
+        "photo name share"
+        "photo date share";
+        height: 60px;
+}
+
+.news-footer > *{
+    margin: 0;
+}
+
+.author-photo{
+    grid-area: photo;
+}
+
+.author-name{
+    grid-area: name;
+    align-self: flex-end;
+}
+
+.newsletter-date{
+    grid-area: date;
+    align-self: flex-start;
+    font-size: 16px;
+}
+
+.share-button{
+    grid-area: share;
+    align-self: center;
 }
 
 .news h2, .news header{
@@ -266,8 +388,151 @@ a{
     letter-spacing: 0em;
     text-align: left;
     color: #8693A4;
-
 }
 
+.contacts{
+    width: 1010px;
+    margin-left: 55px;
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    column-gap: 100px;
+    row-gap: 35px;
+    grid-template-areas: 
+        "map title"
+        "map list";
+    margin-bottom: 120px;
+    /*Todo баг не на всю станицу */
+}
+
+.contacts  *{
+    margin: 0;
+}
+
+.contacts-header{
+    grid-area: title;
+    align-self: flex-end;
+    justify-self: start;
+    margin-top: 50px;
+}
+
+.contacts-list{
+    grid-area: list;
+    list-style: none;
+    align-self: flex-start;
+    padding: 0;
+}
+
+.contact-item{
+    margin-bottom: 15px;
+}
+
+.contact-item:last-child{
+    margin-bottom: 0;
+}
+
+.map-photo{
+    grid-area: map;
+}
+
+.contact-name{
+    display: inline-block;
+}
+
+.contact-description{
+    display: inline-block;
+}
+
+.social{
+    display: block;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.social-item{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px #00C6BD solid;
+    margin-right: 15px;
+}
+
+.social-item:last-child{
+    margin-right: 0;
+}
+
+.social-item a{
+    display: block;
+    margin-top: auto ;
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.page-footer{
+    width: 100%;
+    padding: 60px 55px;
+    display: grid;
+    grid-template-columns: 175px 1fr;
+    column-gap: 125px;
+    grid-template-areas: 
+        "logo site-map"
+        "private-policy site-map"
+        "copyright site-map";
+        grid-template-rows: 1fr 10px 10px;
+    row-gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: #8693A4 solid 1px;
+}
+
+.page-footer *{
+    margin: 0;
+    padding: 0;
+}
+
+.page-footer .logo{
+    grid-area: logo;
+    width: 100px;
+    height: auto;
+}
+
+.copyright{
+    grid-area: copyright;
+}
+
+.private-policy{
+    grid-area: private-policy;
+}
+
+.site-map{
+    grid-area: site-map;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-map-h1 > a{
+    display: block;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.site-map-h1 ul{
+    list-style: none;
+}
+
+.site-map-item{
+    margin-bottom: 15px;
+}
+
+.site-map-item:last-child{
+    margin-bottom: 0;
+}
 
 

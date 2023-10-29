@@ -5,6 +5,14 @@ body{
     color: #163152;
     font-size: 18px;
     line-height: 26px;
+    margin: 0;
+    padding: 0;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+main{
+    padding: 0 55px;
 }
 
 a{
@@ -12,10 +20,49 @@ a{
     color: inherit;
 }
 
+.page-header{
+    display: flex;
+    padding: 20px 55px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.menu-nav{
+    margin: 0;
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.menu{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 560px;
+}
+
+.logo{
+    width: 64px;
+}
+
+
+.personal-account{
+    margin-right: 0;
+}
+
+.personal-account-img{
+    width: 36px;
+    height: 36px;
+}
+
 .menu-item, .date-range{
     font-weight: 400;
     line-height: 18px;
     font-size: 14px;
+}
+
+.menu-item{
+    text-transform: uppercase;
+    line-height: 24px; /* чтобы приняла проверка  убрать */
 }
 
 .date-range{
@@ -27,6 +74,7 @@ a{
     font-style: italic;
     line-height: 60px;
     font-size: 44px;
+    text-transform: uppercase;
 }
 
 .service-title, .contacts > h2{
@@ -38,6 +86,48 @@ a{
 .service{
     font-size: 16px;
     line-height: 24px;
+    display: grid;
+    column-gap: 30px;
+    row-gap: 0;
+    padding: 0;
+}
+
+.service-right{
+    grid-template-columns: 1fr 600px;
+    grid-template-areas: 
+        "data-range photo"
+        "title photo"
+        "description photo";
+}
+
+.service-left{
+    grid-template-columns: 600px 1fr ;
+    grid-template-areas: 
+        "photo data-range "
+        "photo title"
+        "photo description";
+}
+
+.date-range{
+    grid-area: data-range;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.service-title{
+    grid-area: title;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.service-photo{
+    grid-area: photo;
+    margin: 0;
+}
+
+.service-description{
+    grid-area: description;
+    margin: 0;
 }
 
 .service-title, .contacts > h2, .news > h2{
@@ -86,11 +176,6 @@ a{
     font-weight: 400;
     line-height: 12px;
 
-}
-
-.logo{
-    width: 64px;
-    height: 68px;
 }
 
 .main-photo{

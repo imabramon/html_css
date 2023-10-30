@@ -6,6 +6,55 @@ body{
     font-size: 24px;
     line-height: 30px;
     color: #2A2B2E;
+    width: 100%;
+}
+
+.page-header{
+    width: 1280px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    padding: 25px 105px;
+}
+
+.company-name{
+    align-self: center;
+}
+
+.main-nav{
+    width: 580px;
+    align-self: center;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.header-contacts-container{
+    align-self: center;
+}
+
+.phone-number{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    line-height: 15px;
+}
+
+.work-time{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    line-height: 15px;
 }
 
 a{

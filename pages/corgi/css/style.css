@@ -9,6 +9,11 @@ body{
     width: 100%;
 }
 
+main{
+    margin: 0;
+    padding: 0;
+}
+
 .page-header{
     width: 1280px;
     display: flex;
@@ -16,6 +21,8 @@ body{
     margin-right: auto;
     justify-content: space-between;
     padding: 25px 105px;
+    margin-bottom: 60px;
+    height: 30px;
 }
 
 .company-name{
@@ -82,6 +89,74 @@ a{
 
 .company-name span{
     color: #FDA237;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section-main-container{
+    display: flex;
+    justify-content: center;
+}
+
+.hero-section-content-container{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section-content-container :first-child{
+    margin-top: auto;
+}
+
+.hero-section-content-container :last-child{
+    margin-bottom: auto;
+}
+
+.hero-section-visual-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section-header{
+    margin: 0;
+    margin-bottom: 35px;
+    width: 470px;
+    font-size: 35px;
+}
+
+.offer{
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.offer-button{
+    width: 270px;
+    height: 68px;
+    display: inline-block;
+    text-align: center;
+    line-height: 68px; /* TODO: fix this shitcode */
+}
+
+
+
+.corgi-characteristics{
+    width: 200px;
+}
+
+.characteristics-item{
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.characteristics-item:last-child{
+    margin-bottom: 0;
 }
 
 .characteristics-line{
@@ -668,6 +743,9 @@ fieldset{
 
 .social{
     list-style: none;
+    display: flex;
+    width: 105px;
+    justify-content: space-between;
 }
 
 .corgi-characteristics{

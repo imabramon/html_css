@@ -245,10 +245,6 @@ h2::before{
 }
 */
 
-.care figure{
-    width: 472px;
-    height: 472px;
-}
 
 
 h1, h2, h3{
@@ -302,17 +298,20 @@ section p{
 
 .care-figure{
     position: relative;
+    margin: 0;
 }
 
 .care-figure img{
     height: 404px;
+    margin-left: 52px;
+   
 }
 
 .care-figure svg{
     position: absolute;
     z-index: -1;
-    top: -42px;
-    left: -86px;
+    top: -34px;
+    left: -28px;
     width: 472px;
     height: 472px;
 }
@@ -320,6 +319,91 @@ section p{
 .care-item p{
     font-size: 15px;
     line-height: 20px;
+    width: 290px;
+}
+
+.section-header{
+    margin: 0;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.care-content-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    padding-top: 100px;
+}
+
+.care-figure{
+    width: 410px;
+    height: 410px;
+}
+
+.care-content-container :nth-child(1){
+    order: 1;
+}
+
+.care-content-container :nth-child(2){
+    order: 3;
+}
+
+.care-content-container :nth-child(3){
+    order: 2;
+}
+
+.care{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
+    padding-bottom: 125px;
+}
+
+.care-list{
+    margin-top: -25px;
+    width: fit-content;
+    --list-margin: 25px;
+}
+
+.care-item::marker{
+    position: relative;
+    padding-top: 60px;
+    /* TODO: make marker positioning by design*/
+}
+
+.care-list-right-oriented{
+    direction: rtl;
+    margin-right: var(--list-margin);
+}
+
+.care-list-right-oriented > :nth-child(1){
+    margin-right: -45px;
+}
+
+.care-list-right-oriented > :nth-child(3){
+    margin-right: -50px;
+}
+
+.care-list-left-oriented{
+    margin-left: var(--list-margin);
+}
+
+.care-list-left-oriented > :nth-child(1){
+    margin-left: -45px;
+}
+
+.care-list-left-oriented > :nth-child(3){
+    margin-left: -65px;
+}
+
+.care-item{
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 .care-item h3{

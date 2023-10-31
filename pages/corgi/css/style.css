@@ -777,8 +777,18 @@ fieldset{
     padding-bottom: 150px;
 }
 
+.about{
+    height: fit-content;
+}
+
+
 .about-figure{
     position: relative;
+    padding: 0;
+    margin: 0;
+    width: 420px;
+    height: 420px;
+    margin-right: 110px;
 }
 
 .section-content-container{

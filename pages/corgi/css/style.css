@@ -99,6 +99,9 @@ a{
 .hero-section-main-container{
     display: flex;
     justify-content: center;
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-section-content-container{
@@ -119,6 +122,13 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.hero-section-footer{
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 60px;
 }
 
 .hero-section-header{

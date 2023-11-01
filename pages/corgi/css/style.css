@@ -610,6 +610,20 @@ section p{
     border-radius: 35px;
 }
 
+.way-to-pay{
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.way-to-pay-list{
+    width: 1100px;
+    display: flex;
+    height: 320px;
+    padding: 0;
+    margin: 0 auto;
+}
+
 .way-to-pay-list{
     list-style: none;
     counter-reset: item;
@@ -617,6 +631,49 @@ section p{
 
 .way-to-pay-item{
     counter-increment: item;
+    position: relative;
+    display: block;
+    font-size: 12px;
+}
+
+.way-to-pay-item:nth-child(2n){
+    margin-top: auto;
+}
+
+.way-to-pay-item:nth-child(2n+1){
+    margin-bottom: auto;
+}
+
+.way-to-pay-item:nth-child(2n)::before{
+    
+}
+
+.way-to-pay-item:nth-child(2n+1)::before{
+    bottom: -30px;
+}
+
+.way-to-pay-item:nth-child(1){
+    width: 180px;
+}
+
+.way-to-pay-item:nth-child(2){
+    width: 180px;
+}
+
+.way-to-pay-item:nth-child(3){
+    width: 180px;
+}
+
+.way-to-pay-item:nth-child(4){
+    width: 328px;
+}
+
+.way-to-pay-item:nth-child(5){
+    width: 324px;
+}
+
+.way-to-pay-item:nth-child(6){
+    width: 449px;
 }
 
 .way-to-pay-item::before{
@@ -627,6 +684,7 @@ section p{
     width: 35px;
     height: 30px;
     text-align: center;
+    position: absolute;
     padding-top: 5px;
     display: inline-block;
     margin-right: 10px;

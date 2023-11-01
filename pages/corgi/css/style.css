@@ -447,15 +447,104 @@ section p{
     transform: scaleX(-1);
 }
 
+.puppets{
+    position: relative;
+    padding: 0;
+    padding: 100px 0;
+    z-index: -2;
+}
+
+.puppets-content-container{
+    width: 1280px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+    position: relative;
+}
+
+.filter{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 165px;
+}
+
 .filter-item{
     font-size: 15px;
+    line-height: 15px;
     border: 1px #D2DEEE solid;
+    padding: 10px 15px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    margin: 0;
+    margin-right: 20px;
+}
+
+.filter-item:last-child{
+    margin-right: 0;
 }
 
 .filter-item.selected{
     font-size: 15px;
     border-color: #4A6FFF;
 } 
+
+.puppets-list{
+    display: flex;
+}
+
+.puppet-item{
+    width: 255px;
+    height: fit-content;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.puppet-item{
+    margin-right: 20px;
+}
+
+.puppet-item:first-child{
+    margin-left: auto;
+}
+
+.puppet-item:last-child{
+    margin-right: auto;
+}
+
+.puppet-item-params-container{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+
+}
+
+.puppet-description{
+    text-align: center;
+}
+
+.puppets-nav-list{
+    list-style: none;
+}
+
+.puppets-nav-item{
+    position: absolute;
+    top: 50%;
+    --nav-arrow-position: 100px;
+}
+
+.forward{
+    right: calc(var(--nav-arrow-position) - 20px);
+}
+
+.backward{
+    left: var(--nav-arrow-position);
+}
 
 .question{
     position: relative;

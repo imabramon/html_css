@@ -549,6 +549,19 @@ section p{
 .question{
     position: relative;
     border-bottom: #4A6FFF solid 1px;
+    
+}
+
+.question.opened{
+    margin-bottom: 25px;
+}
+
+.answer{
+    margin-bottom: 30px;
+}
+
+.question.opened::after{
+    transform: rotate(90deg);
 }
 
 .question::after{
@@ -559,6 +572,7 @@ section p{
     background-size: 10px 17px;
     position: absolute;
     left: calc(100% - 50px);
+    top: calc(50% - 9px);
 }
 
 .offer-button{
@@ -587,6 +601,60 @@ section p{
     height: 45px;
     line-height: 45px;
     text-align: center;
+}
+
+.FAQ{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    position: relative;
+    z-index: -2;
+}
+
+.FAQ-content-container{
+    display: flex;
+    padding: 50px 100px;
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.question-figure{
+    order: -1;
+    position: relative;
+    margin: 0;
+    margin-right: 120px;
+}
+
+.qustion-corgi{
+    width: 300px;
+}
+
+.question-img:nth-of-type(2){
+    position: absolute;
+    top: -125px;
+    left: calc(25%);
+}
+
+.question-img:nth-of-type(3){
+    position: absolute;
+    top: -125px;
+    left: calc(50%);
+}
+
+.question-img:nth-of-type(4){
+    position: absolute;
+    top: -125px;
+    left: calc(75%);
+}
+
+.questions{
+    width: 630px;
+}
+
+.question{
+    padding-left: 25px;
+    line-height: 60px;
 }
 
 .more{

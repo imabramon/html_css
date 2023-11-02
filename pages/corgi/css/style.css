@@ -610,8 +610,14 @@ section p{
     border-radius: 35px;
 }
 
+.section-header-left-aligned{
+    margin-left: 0;
+    margin-right: auto;
+    width: fit-content;
+}
+
 .way-to-pay{
-    padding: 100px 0;
+    padding: 100px 100px;
     display: flex;
     flex-direction: column;
 }
@@ -627,6 +633,7 @@ section p{
 .way-to-pay-list{
     list-style: none;
     counter-reset: item;
+    margin-top: 70px;
 }
 
 .way-to-pay-item{
@@ -634,6 +641,7 @@ section p{
     position: relative;
     display: block;
     font-size: 12px;
+    height: 75px;
 }
 
 .way-to-pay-item:nth-child(2n){
@@ -645,11 +653,11 @@ section p{
 }
 
 .way-to-pay-item:nth-child(2n)::before{
-    
+    top: -60px;
 }
 
 .way-to-pay-item:nth-child(2n+1)::before{
-    bottom: -30px;
+    top: 120px;
 }
 
 .way-to-pay-item:nth-child(1){

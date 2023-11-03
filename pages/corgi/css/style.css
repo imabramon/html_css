@@ -934,15 +934,16 @@ section p{
 
 .excursion-item::before{
     content: "";
-    width: 75px;
-    height: 75px;
+    width: 43px;
+    height: 43px;
     background: url("../img/icons8-paw-100.png") no-repeat 0 0;
-    background-size: 75px 75px;
+    background-size: 43px 43px;
     z-index: -1;
     transform: rotate(-30deg);
     position: absolute;
     top: 0;
-    left: -100px;
+    left: -67px;
+    /* TODO: make color by design*/
 }
 
 .excursion-figure{
@@ -1103,6 +1104,77 @@ fieldset{
 
 .story-item-opened{
     display: flex;
+}
+
+.corgi-world{
+    padding: 100px 0;
+    width: 100%;
+}
+
+.corgi-world-content-container{
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    display: flex;
+    width: fit-content;
+}
+
+.corgi-world-text-content-container{
+    width: 400px;
+    position: relative;
+    padding: 50px 133px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.excursion-figure{
+    width: 485px;
+    height: 485px;
+    margin: 0;
+    margin-left: -60px;
+}
+
+.corgi-world-text-content-container::before{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 650px;
+    height: 485px;
+    z-index: -1;
+    background: url("../img/story-item-content-bg.svg") no-repeat;
+    background-size: 100% auto;
+}
+.small-header{
+    margin: 0;
+}
+
+.excursion-list{
+    padding: 0;
+    margin-top: 27px;
+    margin-bottom: 45px;
+}
+
+.more{
+    width: 165px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.excursion-item{
+    padding: 0;
+    margin-bottom: 35px;
+}
+.examples-item:last-child{
+    margin-bottom: 0;
 }
 
 .corgi-world h3{

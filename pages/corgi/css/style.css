@@ -12,6 +12,7 @@ body{
 main{
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 .page-header{
@@ -575,6 +576,51 @@ section p{
     top: calc(50% - 9px);
 }
 
+.videos-list{
+    list-style: none;
+    width: 965px;
+    display: grid;
+    grid-template-areas: 
+        "large-1 small-1"
+        "large-1 small-2";
+        grid-template-columns: 1fr 330px;
+    column-gap: 40px;
+    margin-top: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+}
+
+.video-item{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    padding: 15px;
+    margin: 0;
+}
+
+.play-button{
+    position: absolute;
+    top: calc(50% - 26px);
+    left: calc(50% - 26px);
+}
+
+.video-item:nth-child(1){
+    grid-area: large-1;
+}
+
+.video-item:nth-child(2){
+    grid-area: small-1;
+}
+
+.video-item:nth-child(3){
+    grid-area: small-2;
+}
+
+.video{
+    
+}
+
 
 
 .offer-button{
@@ -666,9 +712,17 @@ section p{
 }
 
 .more-videos{
+    display: block;
     font-size: 22px;
     border: 1px #4A6FFF solid;
     border-radius: 35px;
+    width: 245px;
+    height:68px;
+    line-height: 68px;
+    text-align: center;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .submit{
@@ -850,7 +904,7 @@ section p{
 
 .video{
     border-radius: 30px;
-    object-fit:cover;
+    object-fit:fill; /* TODO: Сделать без растягивания*/
 }
 
 .video-item{
@@ -1255,6 +1309,10 @@ fieldset{
 
 .videos{
     background-color: #FAFBFF;
+    width: 100%;
+    padding: 100px 0;
+    position: relative;
+    z-index: -2;
 }
 
 
